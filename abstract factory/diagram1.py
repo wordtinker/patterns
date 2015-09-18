@@ -37,6 +37,7 @@ def create_diagram(factory):
     This function takes a diagram factory as its sole argument and uses it to
     create the required diagram. The function doesn’t know or care what kind of
     factory it receives so long as it supports our diagram factory interface.
+    The main purpose is polymorphism of diagram.
     """
     diagram = factory.make_diagram(30, 7)
     rectangle = factory.make_rectangle(4, 1, 22, 5, "yellow")
